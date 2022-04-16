@@ -1,0 +1,4 @@
+﻿SELECT *, (SELECT MAX(RECORD) FROM (VALUES ([Weight1]), ([Weight2]), ([Weight3])) AS WeightTable(RECORD))
+AS RECORD FROM Athlete 
+
+SELECT * FROM ATHLETE
